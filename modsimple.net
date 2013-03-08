@@ -1,0 +1,129 @@
+# EESchema Netlist Version 1.1 created  Sun 03 Mar 2013 07:30:15 PM CST
+(
+ ( /512B9601 SM0805 C1 1uF
+  ( 1 GND )
+  ( 2 N-000013 )
+ )
+ ( /512B964A SM0805 C2 1uF
+  ( 1 /Atomizer+ )
+  ( 2 GND )
+ )
+ ( /51338696 SM0805 C3 1uF
+  ( 1 N-000003 )
+  ( 2 GND )
+ )
+ ( /512B1B1D LED-0805 D1 LED
+  ( 1 N-000015 )
+  ( 2 N-000009 )
+ )
+ ( /51338773 LED-0805 D2 LED
+  ( 1 N-000016 )
+  ( 2 /Atomizer- )
+ )
+ ( /512B1101 USBmicro J1 MICROUSB
+  ( 1 N-000004 )
+  ( 2 ? )
+  ( 3 ? )
+  ( 4 ? )
+  ( 5 GND )
+ )
+ ( /512B9DDA 3PIN_6mm JP1 JUMPER3
+  ( 1 N-000013 )
+  ( 2 N-000004 )
+  ( 3 N-000003 )
+ )
+ ( /512AF536 SIL-10 P1 CONN_10
+  ( 1 ? )
+  ( 2 /Atomizer+ )
+  ( 3 /Atomizer+ )
+  ( 4 /Atomizer- )
+  ( 5 /Atomizer+ )
+  ( 6 /Switch- )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 GND )
+ )
+ ( /513029D7 TO-252_Mosfet Q2 FDD8870
+  ( D /Atomizer- )
+  ( G /Switch- )
+  ( S GND )
+ )
+ ( /512B94C6 SM0805 R1 330
+  ( 1 N-000015 )
+  ( 2 /Atomizer+ )
+ )
+ ( /5131879B SM0805 R2 10K
+  ( 1 /Switch- )
+  ( 2 GND )
+ )
+ ( /5133879A SM0805 R3 330
+  ( 1 N-000016 )
+  ( 2 /Atomizer+ )
+ )
+ ( /512B0BCD SOT23-5 U1 MAX1555
+  ( 1 N-000013 )
+  ( 2 GND )
+  ( 3 N-000009 )
+  ( 4 N-000003 )
+  ( 5 /Atomizer+ )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
