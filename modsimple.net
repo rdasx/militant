@@ -1,129 +1,200 @@
-# EESchema Netlist Version 1.1 created  Sun 03 Mar 2013 07:30:15 PM CST
-(
- ( /512B9601 SM0805 C1 1uF
-  ( 1 GND )
-  ( 2 N-000013 )
- )
- ( /512B964A SM0805 C2 1uF
-  ( 1 /Atomizer+ )
-  ( 2 GND )
- )
- ( /51338696 SM0805 C3 1uF
-  ( 1 N-000003 )
-  ( 2 GND )
- )
- ( /512B1B1D LED-0805 D1 LED
-  ( 1 N-000015 )
-  ( 2 N-000009 )
- )
- ( /51338773 LED-0805 D2 LED
-  ( 1 N-000016 )
-  ( 2 /Atomizer- )
- )
- ( /512B1101 USBmicro J1 MICROUSB
-  ( 1 N-000004 )
-  ( 2 ? )
-  ( 3 ? )
-  ( 4 ? )
-  ( 5 GND )
- )
- ( /512B9DDA 3PIN_6mm JP1 JUMPER3
-  ( 1 N-000013 )
-  ( 2 N-000004 )
-  ( 3 N-000003 )
- )
- ( /512AF536 SIL-10 P1 CONN_10
-  ( 1 ? )
-  ( 2 /Atomizer+ )
-  ( 3 /Atomizer+ )
-  ( 4 /Atomizer- )
-  ( 5 /Atomizer+ )
-  ( 6 /Switch- )
-  ( 7 ? )
-  ( 8 ? )
-  ( 9 ? )
-  ( 10 GND )
- )
- ( /513029D7 TO-252_Mosfet Q2 FDD8870
-  ( D /Atomizer- )
-  ( G /Switch- )
-  ( S GND )
- )
- ( /512B94C6 SM0805 R1 330
-  ( 1 N-000015 )
-  ( 2 /Atomizer+ )
- )
- ( /5131879B SM0805 R2 10K
-  ( 1 /Switch- )
-  ( 2 GND )
- )
- ( /5133879A SM0805 R3 330
-  ( 1 N-000016 )
-  ( 2 /Atomizer+ )
- )
- ( /512B0BCD SOT23-5 U1 MAX1555
-  ( 1 N-000013 )
-  ( 2 GND )
-  ( 3 N-000009 )
-  ( 4 N-000003 )
-  ( 5 /Atomizer+ )
- )
-)
-*
-{ Allowed footprints by component:
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component C2
- SM*
- C?
- C1-1
-$endlist
-$component C3
- SM*
- C?
- C1-1
-$endlist
-$component D1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D2
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$endfootprintlist
-}
+(export (version D)
+  (design
+    (source /home/asx/kicad/mod/modsimple.sch)
+    (date "Tue 12 Mar 2013 11:01:13 AM CDT")
+    (tool "eeschema (2013-feb-26)-stable"))
+  (components
+    (comp (ref R3)
+      (value 330)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5133879A))
+    (comp (ref C3)
+      (value 1uF)
+      (libsource (lib device) (part C))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51338696))
+    (comp (ref R2)
+      (value 10K)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5131879B))
+    (comp (ref Q2)
+      (value FDD8870)
+      (libsource (lib device) (part MOSFET_N))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 513029D7))
+    (comp (ref JP1)
+      (value JUMPER3)
+      (libsource (lib device) (part JUMPER3))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 512B9DDA))
+    (comp (ref C2)
+      (value 1uF)
+      (libsource (lib device) (part C))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 512B964A))
+    (comp (ref C1)
+      (value 1uF)
+      (libsource (lib device) (part C))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 512B9601))
+    (comp (ref R1)
+      (value 330)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 512B94C6))
+    (comp (ref J1)
+      (value MICROUSB)
+      (libsource (lib mod) (part MICROUSB))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 512B1101))
+    (comp (ref U1)
+      (value MAX1555)
+      (libsource (lib mod) (part MAX1555))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 512B0BCD))
+    (comp (ref P1)
+      (value CONN_10)
+      (libsource (lib conn) (part CONN_10))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 512AF536)))
+  (libparts
+    (libpart (lib device) (part C)
+      (description "Condensateur non polarise")
+      (footprints
+        (fp SM*)
+        (fp C?)
+        (fp C1-1))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part JUMPER3)
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) JUMPER3))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))))
+    (libpart (lib device) (part MOS_N)
+      (docs transistors/mos/*.*)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) MOS_N))
+      (pins
+        (pin (num D) (name D) (type passive))
+        (pin (num G) (name G) (type input))
+        (pin (num S) (name S) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part CONN_10)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_10))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))
+        (pin (num 7) (name P7) (type passive))
+        (pin (num 8) (name P8) (type passive))
+        (pin (num 9) (name P9) (type passive))
+        (pin (num 10) (name P10) (type passive))))
+    (libpart (lib mod) (part MAX1555)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) MAX1555))
+      (pins
+        (pin (num 1) (name USB) (type input))
+        (pin (num 2) (name GND) (type input))
+        (pin (num 3) (name CHG) (type input))
+        (pin (num 4) (name DC) (type input))
+        (pin (num 5) (name BAT) (type input))))
+    (libpart (lib mod) (part MICROUSB)
+      (fields
+        (field (name Reference) J)
+        (field (name Value) MICROUSB))
+      (pins
+        (pin (num 1) (name Vbus) (type input))
+        (pin (num 2) (name D-) (type input))
+        (pin (num 3) (name D+) (type input))
+        (pin (num 4) (name ID) (type NotConnected))
+        (pin (num 5) (name GND) (type input)))))
+  (libraries
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical mod)
+      (uri mod.lib)))
+  (nets
+    (net (code 1) (name GND)
+      (node (ref R2) (pin 2))
+      (node (ref C1) (pin 1))
+      (node (ref Q2) (pin S))
+      (node (ref C2) (pin 2))
+      (node (ref J1) (pin 5))
+      (node (ref U1) (pin 2))
+      (node (ref P1) (pin 1))
+      (node (ref C3) (pin 2)))
+    (net (code 2) (name "")
+      (node (ref JP1) (pin 1))
+      (node (ref U1) (pin 1))
+      (node (ref C1) (pin 2)))
+    (net (code 3) (name "")
+      (node (ref JP1) (pin 3))
+      (node (ref U1) (pin 4))
+      (node (ref C3) (pin 1)))
+    (net (code 4) (name /Switch-)
+      (node (ref R2) (pin 1))
+      (node (ref Q2) (pin G))
+      (node (ref P1) (pin 10)))
+    (net (code 5) (name "")
+      (node (ref JP1) (pin 2))
+      (node (ref J1) (pin 1)))
+    (net (code 6) (name /Atomizer-)
+      (node (ref P1) (pin 6))
+      (node (ref Q2) (pin D))
+      (node (ref P1) (pin 5)))
+    (net (code 7) (name /chgLED-)
+      (node (ref U1) (pin 3))
+      (node (ref P1) (pin 9)))
+    (net (code 8) (name /chgLED+)
+      (node (ref P1) (pin 8))
+      (node (ref R1) (pin 2)))
+    (net (code 9) (name /FireLED+)
+      (node (ref R3) (pin 1))
+      (node (ref P1) (pin 7)))
+    (net (code 10) (name /Atomizer+)
+      (node (ref U1) (pin 5))
+      (node (ref C2) (pin 1))
+      (node (ref R1) (pin 1))
+      (node (ref P1) (pin 2))
+      (node (ref P1) (pin 3))
+      (node (ref P1) (pin 4))
+      (node (ref R3) (pin 2)))
+    (net (code 11) (name "")
+      (node (ref J1) (pin 4)))
+    (net (code 12) (name "")
+      (node (ref J1) (pin 3)))
+    (net (code 13) (name "")
+      (node (ref J1) (pin 2)))))
