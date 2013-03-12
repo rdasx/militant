@@ -1,0 +1,80 @@
+Cmp-Mod V01 Created by CvPcb (2013-feb-26)-stable date = Tue 12 Mar 2013 11:00:16 AM CDT
+
+BeginCmp
+TimeStamp = /512B9601;
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /512B964A;
+Reference = C2;
+ValeurCmp = 1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51338696;
+Reference = C3;
+ValeurCmp = 1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /512B1101;
+Reference = J1;
+ValeurCmp = MICROUSB;
+IdModule  = USBmicro;
+EndCmp
+
+BeginCmp
+TimeStamp = /512B9DDA;
+Reference = JP1;
+ValeurCmp = JUMPER3;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /512AF536;
+Reference = P1;
+ValeurCmp = CONN_10;
+IdModule  = SIL-10;
+EndCmp
+
+BeginCmp
+TimeStamp = /513029D7;
+Reference = Q2;
+ValeurCmp = FDD8870;
+IdModule  = TO-252_Mosfet;
+EndCmp
+
+BeginCmp
+TimeStamp = /512B94C6;
+Reference = R1;
+ValeurCmp = 330;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5131879B;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5133879A;
+Reference = R3;
+ValeurCmp = 330;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /512B0BCD;
+Reference = U1;
+ValeurCmp = MAX1555;
+IdModule  = SOT23-5;
+EndCmp
+
+EndListe

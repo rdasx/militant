@@ -1,0 +1,5 @@
+#Ignore Backup Files
+*.back
+*.bck
+*.brd-bak
+*.000
