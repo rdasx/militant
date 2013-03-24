@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Sat 23 Mar 2013 09:43:25 AM CDT
+PCBNEW-BOARD Version 2 date Sun 24 Mar 2013 12:34:08 PM CDT
 
 # Created by Pcbnew(2013-feb-26)-stable
 
@@ -7,11 +7,11 @@ encoding utf-8
 Units mm
 LayerCount 2
 EnabledLayers 1FFF8001
-VisibleLayers 10300000
-Links 25
+VisibleLayers 11208000
+Links 0
 NoConn 0
-Di 136.588499 71.13524 164.532733 90.805
-Ndraw 4
+Di 136.50606 65.97175 174.534287 85.34
+Ndraw 6
 Ntrack 45
 Nzone 0
 BoardThickness 1.6002
@@ -20,9 +20,9 @@ Nnets 11
 $EndGENERAL
 
 $SHEETDESCR
-Sheet A4 11693 8268
+Sheet USLetter 11000 8500
 Title ""
-Date "23 mar 2013"
+Date "24 mar 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -60,9 +60,9 @@ PadSize 0.39878 1.34874
 PadDrill 0
 Pad2MaskClearance 0.254
 SolderMaskMinWidth 0
-AuxiliaryAxisOrg 0 0
+AuxiliaryAxisOrg 136.5885 84.8995
 VisibleElements FFFFFFBF
-PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 15761409) (usegerberextensions false) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory ""))
 $EndSETUP
 
 $EQUIPOT
@@ -150,6 +150,101 @@ AddNet "/Atomizer-"
 AddNet "GND"
 AddNet "N-000003"
 $EndNCLASS
+$MODULE USBmicro
+Po 157.353 84.836 0 15 514DD906 5133F92E ~~
+Li USBmicro
+Sc 5133F92E
+AR /512B1101
+Op 0 0 0
+T0 0 -10.2997 1.524 1.524 0 0.3048 N I 21 N "J1"
+T1 0 -6.2865 0.635 0.635 0 0.127 N V 21 N "MICROUSB"
+DS -3.81 -4.572 -3.81 -0.254 0.381 21
+DS 3.81 -4.572 3.81 -0.254 0.381 21
+DS 3.81 -4.572 -3.81 -4.572 0.381 21
+DS -3.81 -0.254 3.81 -0.254 0.381 21
+$PAD
+Sh "3" R 0.39878 1.34874 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -4.12496
+.LocalClearance 0.12446
+$EndPAD
+$PAD
+Sh "5" R 0.39878 1.34874 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 7 "GND"
+Po 1.30048 -4.12496
+.LocalClearance 0.12446
+$EndPAD
+$PAD
+Sh "4" R 0.39878 1.34874 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.65024 -4.12496
+.LocalClearance 0.12446
+$EndPAD
+$PAD
+Sh "2" R 0.39878 1.34874 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.65024 -4.12496
+.LocalClearance 0.12446
+$EndPAD
+$PAD
+Sh "1" R 0.39878 1.34874 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 10 "N-000005"
+Po -1.30048 -4.12496
+.LocalClearance 0.12446
+$EndPAD
+$PAD
+Sh "X" R 2.10058 1.6002 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.15036 -4.0005
+$EndPAD
+$PAD
+Sh "X" R 2.10058 1.6002 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.15036 -4.0005
+$EndPAD
+$PAD
+Sh "X" R 1.89992 1.89992 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.19888 -1.45034
+$EndPAD
+$PAD
+Sh "X" R 1.89992 1.89992 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -3.74904 -1.45034
+$EndPAD
+$PAD
+Sh "X" R 1.89992 1.89992 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.19888 -1.45034
+$EndPAD
+$PAD
+Sh "X" R 1.89992 1.89992 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.74904 -1.45034
+$EndPAD
+$EndMODULE USBmicro
 $MODULE SM0805
 Po 141.605 78.74 2700 15 42806E04 5133A94A ~~
 Li SM0805
@@ -262,14 +357,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE SM0805
 $MODULE SM0805
-Po 159.639 79.629 -0 0 42806E04 51338EE6 ~~
+Po 159.639 79.629 0 0 42806E04 51338EE6 ~~
 Li SM0805
 Sc 51338EE6
 AR /5131879B
 Op 0 0 0
 At SMD
-T0 0 0 0.635 0.635 -0 0.127 M V 20 N "R2"
-T1 0 0 0.635 0.635 -0 0.127 M I 20 N "10K"
+T0 0 0 0.635 0.635 0 0.127 M V 20 N "R2"
+T1 0 0 0.635 0.635 0 0.127 M I 20 N "10K"
 DC -1.651 -0.762 -1.651 -0.635 0.127 20
 DS -0.508 -0.762 -1.524 -0.762 0.127 20
 DS -1.524 -0.762 -1.524 0.762 0.127 20
@@ -580,101 +675,32 @@ Ne 9 "N-000003"
 Po 2.54 0
 $EndPAD
 $EndMODULE SIL-3
-$MODULE USBmicro
-Po 157.353 84.836 0 15 514DBEE0 5133F92E ~~
-Li USBmicro
-Sc 5133F92E
-AR /512B1101
-Op 0 0 0
-T0 0 -10.2997 1.524 1.524 0 0.3048 N I 21 N "J1"
-T1 0 4.8006 1.524 1.524 0 0.3048 N V 21 N "MICROUSB"
-DS 3.81 1.27 3.81 -4.572 0.381 21
-DS 3.81 -4.572 -3.81 -4.572 0.381 21
-DS -3.81 -4.572 -3.81 1.27 0.381 21
-DS -3.81 1.27 3.81 1.27 0.381 21
-$PAD
-Sh "3" R 0.39878 1.34874 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 0 -4.12496
-.LocalClearance 0.12446
-$EndPAD
-$PAD
-Sh "5" R 0.39878 1.34874 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 7 "GND"
-Po 1.30048 -4.12496
-.LocalClearance 0.12446
-$EndPAD
-$PAD
-Sh "4" R 0.39878 1.34874 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 0.65024 -4.12496
-.LocalClearance 0.12446
-$EndPAD
-$PAD
-Sh "2" R 0.39878 1.34874 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -0.65024 -4.12496
-.LocalClearance 0.12446
-$EndPAD
-$PAD
-Sh "1" R 0.39878 1.34874 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 10 "N-000005"
-Po -1.30048 -4.12496
-.LocalClearance 0.12446
-$EndPAD
-$PAD
-Sh "X" R 2.10058 1.6002 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -4.15036 -4.0005
-$EndPAD
-$PAD
-Sh "X" R 2.10058 1.6002 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 4.15036 -4.0005
-$EndPAD
-$PAD
-Sh "X" R 1.89992 1.89992 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1.19888 -1.45034
-$EndPAD
-$PAD
-Sh "X" R 1.89992 1.89992 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3.74904 -1.45034
-$EndPAD
-$PAD
-Sh "X" R 1.89992 1.89992 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1.19888 -1.45034
-$EndPAD
-$PAD
-Sh "X" R 1.89992 1.89992 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3.74904 -1.45034
-$EndPAD
-$EndMODULE USBmicro
+$COTATION
+Ge 0 24 0
+Va 11.938
+Te "0.4700 in"
+Po 168.757599 78.9305 1.524 2.032 0.3048 2700 1
+Sb 0 167.131999 72.9615 167.131999 84.8995 0.3048
+Sd 0 162.6235 84.8995 170.383199 84.8995 0.3048
+Sg 0 162.6235 72.9615 170.383199 72.9615 0.3048
+S1 0 167.131999 84.8995 166.545579 83.772997 0.3048
+S2 0 167.131999 84.8995 167.718419 83.772997 0.3048
+S3 0 167.131999 72.9615 166.545579 74.088003 0.3048
+S4 0 167.131999 72.9615 167.718419 74.088003 0.3048
+$endCOTATION
+$COTATION
+Ge 0 24 0
+Va 26.733575
+Te "1.0525 in"
+Po 149.876671 67.85135 1.524 2.032 0.3048 1.360942322 1
+Sb 0 136.513782 69.508695 163.247282 69.445195 0.3048
+Sd 0 163.2585 74.168 163.23956 66.194005 0.3048
+Sg 0 136.525 74.2315 136.50606 66.257505 0.3048
+S1 0 163.247282 69.445195 162.122175 70.034289 0.3048
+S2 0 163.247282 69.445195 162.119389 68.861452 0.3048
+S3 0 136.513782 69.508695 137.641675 70.092438 0.3048
+S4 0 136.513782 69.508695 137.638889 68.919601 0.3048
+$endCOTATION
 $DRAWSEGMENT
 Po 0 136.779 73.152 136.779 84.709 0.381
 De 28 0 900 0 0
