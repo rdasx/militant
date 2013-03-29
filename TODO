@@ -1,0 +1,7 @@
+Add microprocessor control
+Add Low Battery warning/cutout
+Layout full schematic
+Pull useful updates into "simple" sub-project
+Branch "simple" sub-project into own respository
+Consider adding sub-project "half-cocked" ("Simple" with Series batteries and PWM control)
+Create better names
