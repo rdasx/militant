@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 29 Mar 2013 11:41:29 PM CDT
+EESchema Schematic File Version 2  date Sat 30 Mar 2013 02:51:58 PM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,17 +45,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L R R3
-U 1 1 5133879A
-P 8400 3600
-F 0 "R3" V 8480 3600 50  0000 C CNN
-F 1 "330" V 8400 3600 50  0000 C CNN
-F 2 "" H 8400 3600 60  0001 C CNN
-F 3 "" H 8400 3600 60  0001 C CNN
-	1    8400 3600
-	0    -1   -1   0   
-$EndComp
 $Comp
 L R R2
 U 1 1 5131879B
@@ -134,10 +123,6 @@ F 3 "" H 9700 2550 60  0001 C CNN
 	1    9700 2550
 	1    0    0    -1  
 $EndComp
-Text Label 10050 3600 2    60   ~ 0
-FireLED+
-Text Label 10050 3500 2    60   ~ 0
-FireLED-
 $Sheet
 S 550  1000 700  500 
 U 5155AA12
@@ -265,37 +250,24 @@ DWN-MCU
 Wire Wire Line
 	10050 2450 10050 3000
 Wire Wire Line
-	4250 3100 8050 3100
-Wire Wire Line
-	8050 3100 10050 3100
+	4250 3100 10050 3100
 Wire Wire Line
 	11100 3600 11200 3600
 Wire Wire Line
 	11200 3600 11200 3800
 Wire Wire Line
-	8900 3400 8900 3500
+	8900 3400 8900 5400
 Wire Wire Line
-	8900 3500 8900 5400
-Wire Wire Line
-	8900 5400 10000 5400
-Wire Wire Line
-	10000 5400 10300 5400
+	8900 5400 10300 5400
 Wire Wire Line
 	10000 5400 10000 5600
 Wire Wire Line
-	8650 3600 10050 3600
-Wire Wire Line
 	8900 3400 10050 3400
-Wire Wire Line
-	8900 3500 10050 3500
-Connection ~ 8900 3500
 Connection ~ 6500 550 
 Wire Wire Line
 	10000 6400 10000 6000
 Wire Wire Line
-	9500 6400 9800 6400
-Wire Wire Line
-	9800 6400 10000 6400
+	9500 6400 10000 6400
 Wire Wire Line
 	9800 6400 9800 6500
 Connection ~ 9800 6400
@@ -313,9 +285,7 @@ Wire Wire Line
 	11100 1100 11100 3200
 Connection ~ 8050 3100
 Wire Wire Line
-	9700 2450 10050 2450
-Wire Wire Line
-	10050 2450 10350 2450
+	9700 2450 10350 2450
 Wire Wire Line
 	9700 2450 9700 2550
 Wire Wire Line
@@ -326,11 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 5300 5450 5450
 Wire Wire Line
-	3400 5300 3600 5300
-Wire Wire Line
-	3600 5300 5450 5300
-Wire Wire Line
-	5450 5300 8050 5300
+	3400 5300 8050 5300
 Connection ~ 5450 5300
 Wire Wire Line
 	4250 3850 4250 3100
@@ -348,15 +314,11 @@ Wire Wire Line
 Wire Wire Line
 	2850 4550 2850 6700
 Wire Wire Line
-	3350 4550 3400 4550
-Wire Wire Line
-	3400 4550 4950 4550
+	3350 4550 4950 4550
 Wire Wire Line
 	3400 5150 3400 5300
 Wire Wire Line
-	4800 5800 9500 5800
-Wire Wire Line
-	9500 5800 9700 5800
+	4800 5800 9700 5800
 Wire Wire Line
 	9500 5900 9500 5800
 Connection ~ 9500 5800
@@ -366,14 +328,10 @@ Wire Wire Line
 	10350 3300 10350 2450
 Connection ~ 10050 2450
 Wire Wire Line
-	4150 4650 4250 4650
-Wire Wire Line
-	4250 4650 4950 4650
+	4150 4650 4950 4650
 Connection ~ 4250 4650
 Wire Wire Line
-	8650 4100 10000 4100
-Wire Wire Line
-	10000 4100 10050 4100
+	8650 4100 10050 4100
 Wire Wire Line
 	3650 4650 3600 4650
 Wire Wire Line
@@ -389,38 +347,17 @@ Wire Wire Line
 	8050 4000 8150 4000
 Connection ~ 8050 4100
 Wire Wire Line
-	8650 4000 9950 4000
+	8650 4000 10050 4000
 Wire Wire Line
-	9950 4000 10050 4000
+	8650 3900 10050 3900
 Wire Wire Line
-	8650 3900 9850 3900
+	8050 1250 8050 4450
 Wire Wire Line
-	9850 3900 10050 3900
-Wire Wire Line
-	8050 1250 8050 1750
-Wire Wire Line
-	8050 1750 8050 3100
-Wire Wire Line
-	8050 3100 8050 3600
-Wire Wire Line
-	8050 3600 8050 3700
-Wire Wire Line
-	8050 3700 8050 3900
-Wire Wire Line
-	8050 3900 8050 4000
-Wire Wire Line
-	8050 4000 8050 4100
-Wire Wire Line
-	8050 4100 8050 4450
-Wire Wire Line
-	8150 3600 8050 3600
-Connection ~ 8050 3600
-Wire Wire Line
-	4950 4850 4300 4850
+	4950 4950 4300 4950
 Wire Wire Line
 	4950 4750 4300 4750
 Wire Wire Line
-	4950 4950 4300 4950
+	4950 4850 4300 4850
 Wire Wire Line
 	10000 4300 10000 4100
 Connection ~ 10000 4100
@@ -434,11 +371,11 @@ Wire Wire Line
 Wire Wire Line
 	9850 4500 9850 3900
 Connection ~ 9850 3900
-Text Label 4300 4850 0    60   ~ 0
+Text Label 4300 4950 0    60   ~ 0
 UP-MCU
 Text Label 4300 4750 0    60   ~ 0
 DWN-MCU
-Text Label 4300 4950 0    60   ~ 0
+Text Label 4300 4850 0    60   ~ 0
 FIRE-MCU
 Wire Wire Line
 	10750 4300 10000 4300
@@ -487,15 +424,11 @@ F 3 "" H 10600 4850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 4600 10600 4800
-Wire Wire Line
-	10600 4800 10600 4850
+	10600 4600 10600 4850
 Wire Wire Line
 	10300 4700 10300 4800
 Wire Wire Line
-	10300 4800 10600 4800
-Wire Wire Line
-	10600 4800 10950 4800
+	10300 4800 10950 4800
 Connection ~ 10600 4800
 Wire Wire Line
 	10950 4800 10950 4500
