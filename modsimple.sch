@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 27 Mar 2013 01:11:27 AM CDT
+EESchema Schematic File Version 2  date Mon 01 Apr 2013 08:03:03 AM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,14 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:mod
-LIBS:modsimple-cache
+LIBS:mod-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 3 3
 Title ""
-Date "26 mar 2013"
+Date "1 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -57,10 +57,10 @@ F 3 "" H 7550 4400 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR4
+L GND #PWR05
 U 1 1 513187A3
 P 7950 5800
-F 0 "#PWR4" H 7950 5800 30  0001 C CNN
+F 0 "#PWR05" H 7950 5800 30  0001 C CNN
 F 1 "GND" H 7950 5730 30  0001 C CNN
 F 2 "" H 7950 5800 60  0001 C CNN
 F 3 "" H 7950 5800 60  0001 C CNN
@@ -85,10 +85,10 @@ Switch+
 Text Label 10050 3400 2    60   ~ 0
 Atomizer-
 $Comp
-L GND #PWR6
+L GND #PWR06
 U 1 1 51302ACE
 P 8900 5450
-F 0 "#PWR6" H 8900 5450 30  0001 C CNN
+F 0 "#PWR06" H 8900 5450 30  0001 C CNN
 F 1 "GND" H 8900 5380 30  0001 C CNN
 F 2 "" H 8900 5450 60  0001 C CNN
 F 3 "" H 8900 5450 60  0001 C CNN
@@ -113,10 +113,10 @@ Battery-
 Text Label 10050 3100 2    60   ~ 0
 Battery+
 $Comp
-L GND #PWR7
+L GND #PWR07
 U 1 1 512C4AF2
 P 11200 3800
-F 0 "#PWR7" H 11200 3800 30  0001 C CNN
+F 0 "#PWR07" H 11200 3800 30  0001 C CNN
 F 1 "GND" H 11200 3730 30  0001 C CNN
 F 2 "" H 11200 3800 60  0001 C CNN
 F 3 "" H 11200 3800 60  0001 C CNN
@@ -124,10 +124,10 @@ F 3 "" H 11200 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L GND #PWR08
 U 1 1 512B9659
 P 4750 4750
-F 0 "#PWR2" H 4750 4750 30  0001 C CNN
+F 0 "#PWR08" H 4750 4750 30  0001 C CNN
 F 1 "GND" H 4750 4680 30  0001 C CNN
 F 2 "" H 4750 4750 60  0001 C CNN
 F 3 "" H 4750 4750 60  0001 C CNN
@@ -146,10 +146,10 @@ F 3 "" H 4750 4350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR3
+L GND #PWR09
 U 1 1 512B9625
 P 7000 3300
-F 0 "#PWR3" H 7000 3300 30  0001 C CNN
+F 0 "#PWR09" H 7000 3300 30  0001 C CNN
 F 1 "GND" H 7000 3230 30  0001 C CNN
 F 2 "" H 7000 3300 60  0001 C CNN
 F 3 "" H 7000 3300 60  0001 C CNN
@@ -190,10 +190,10 @@ F 3 "" H 10800 3700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR5
+L GND #PWR010
 U 1 1 512AF9E3
 P 8450 3100
-F 0 "#PWR5" H 8450 3100 30  0001 C CNN
+F 0 "#PWR010" H 8450 3100 30  0001 C CNN
 F 1 "GND" H 8450 3030 30  0001 C CNN
 F 2 "" H 8450 3100 60  0001 C CNN
 F 3 "" H 8450 3100 60  0001 C CNN
@@ -220,7 +220,7 @@ chgLED-
 Text Label 10050 3500 2    60   ~ 0
 FireLED-
 Wire Wire Line
-	8450 3100 8450 3000
+	8450 2800 8450 3100
 Wire Wire Line
 	8450 3000 10050 3000
 Wire Wire Line
@@ -251,7 +251,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 5700 7950 5800
 Wire Wire Line
-	8800 3200 10050 3200
+	8200 3200 10050 3200
 Connection ~ 8800 3200
 Connection ~ 8800 3300
 Wire Wire Line
@@ -279,11 +279,11 @@ Wire Wire Line
 Wire Wire Line
 	9500 3900 9500 4450
 Wire Wire Line
-	9500 4450 7750 4450
+	7750 4450 9750 4450
 Wire Wire Line
 	7750 4450 7750 5100
 Wire Wire Line
-	10050 3500 8900 3500
+	8050 3500 10050 3500
 Connection ~ 8900 3500
 Wire Wire Line
 	7000 3200 6800 3200
@@ -313,10 +313,10 @@ Connection ~ 6500 3600
 Wire Wire Line
 	4750 4550 4750 4750
 $Comp
-L GND #PWR1
+L GND #PWR011
 U 1 1 5151C31D
 P 4550 3550
-F 0 "#PWR1" H 4550 3550 30  0001 C CNN
+F 0 "#PWR011" H 4550 3550 30  0001 C CNN
 F 1 "GND" H 4550 3480 30  0001 C CNN
 F 2 "" H 4550 3550 60  0001 C CNN
 F 3 "" H 4550 3550 60  0001 C CNN
@@ -353,4 +353,24 @@ Wire Wire Line
 Connection ~ 4550 3450
 Wire Wire Line
 	6050 2700 4550 2700
+Text HLabel 8050 3100 0    60   Output ~ 0
+Vbat
+Text Notes 9650 4150 0    60   ~ 0
+NOTE! FireLED- Will not work as intended!\n(I.e. to light an LED when fire button is pressed.)\nHowever, no changes to be made because this pin is useful for the backpack\n
+Text Notes 7850 1950 0    60   ~ 0
+Connections to booster backpack:\nAtomizer+ to Vbat\nSwitch - to GATE\nFireLED- to Atty-\nBattery- to GND (tap from wires, NOT from PCB. Keep connected to board!)
+Wire Wire Line
+	8050 3100 8200 3100
+Wire Wire Line
+	8200 3100 8200 3200
+Text HLabel 8050 2800 0    60   Input ~ 0
+GND
+Text HLabel 9750 4450 2    60   Input ~ 0
+GATE
+Connection ~ 9500 4450
+Wire Wire Line
+	8050 2800 8450 2800
+Connection ~ 8450 3000
+Text HLabel 8050 3500 0    60   Output ~ 0
+Atty-
 $EndSCHEMATC
