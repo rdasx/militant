@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 01 Apr 2013 08:03:03 AM CDT
+EESchema Schematic File Version 2  date Mon 01 Apr 2013 05:32:49 PM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -182,17 +182,13 @@ UP-MCU
 Text Label 10050 3900 2    60   ~ 0
 DWN-MCU
 Wire Wire Line
-	10050 1400 10050 2650
-Wire Wire Line
-	10050 2650 10050 3100
+	10050 1400 10050 3100
 Wire Wire Line
 	8900 3400 8900 5400
 Wire Wire Line
 	8900 5400 10300 5400
 Wire Wire Line
-	8900 3400 10050 3400
-Wire Wire Line
-	10050 3400 10700 3400
+	8900 3400 10700 3400
 Connection ~ 6500 550 
 Wire Wire Line
 	10050 3300 7800 3300
@@ -210,11 +206,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 5300 5450 5450
 Wire Wire Line
-	3400 5300 3600 5300
-Wire Wire Line
-	3600 5300 5450 5300
-Wire Wire Line
-	5450 5300 8050 5300
+	3400 5300 8050 5300
 Connection ~ 5450 5300
 Wire Wire Line
 	4250 3800 4250 3200
@@ -231,20 +223,14 @@ Wire Wire Line
 Wire Wire Line
 	2850 4550 2850 6700
 Wire Wire Line
-	3350 4550 3400 4550
-Wire Wire Line
-	3400 4550 4950 4550
+	3350 4550 4950 4550
 Wire Wire Line
 	3400 5150 3400 5300
 Wire Wire Line
-	4150 4650 4250 4650
-Wire Wire Line
-	4250 4650 4950 4650
+	4150 4650 4950 4650
 Connection ~ 4250 4650
 Wire Wire Line
-	8650 4000 10000 4000
-Wire Wire Line
-	10000 4000 10050 4000
+	8650 4000 10050 4000
 Wire Wire Line
 	3650 4650 3600 4650
 Wire Wire Line
@@ -257,13 +243,9 @@ Connection ~ 8050 4000
 Wire Wire Line
 	8050 3900 8150 3900
 Wire Wire Line
-	8650 3900 9950 3900
+	8650 3900 10050 3900
 Wire Wire Line
-	9950 3900 10050 3900
-Wire Wire Line
-	8650 3800 9850 3800
-Wire Wire Line
-	9850 3800 10050 3800
+	8650 3800 10050 3800
 Wire Wire Line
 	4950 4950 4300 4950
 Wire Wire Line
@@ -336,22 +318,18 @@ F 3 "" H 10600 4850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 4600 10600 4800
-Wire Wire Line
-	10600 4800 10600 4850
+	10600 4600 10600 4850
 Wire Wire Line
 	10300 4700 10300 4800
 Wire Wire Line
-	10300 4800 10600 4800
-Wire Wire Line
-	10600 4800 10950 4800
+	10300 4800 10950 4800
 Connection ~ 10600 4800
 Wire Wire Line
 	10950 4800 10950 4500
 Text Notes 8100 4100 0    60   ~ 0
 UP,DWN,&FIRE pullup values not set
 Text Notes 9150 5000 0    60   ~ 0
-On-board buttons for testing/chassis mount
+Optional on-board buttons\nfor testing/chassis mount
 Wire Wire Line
 	3400 4650 3400 4550
 Connection ~ 3400 4550
@@ -370,23 +348,13 @@ F4 "GATE" I L 10650 1250 60
 F5 "Atty-" O L 10650 1550 60 
 $EndSheet
 Wire Wire Line
-	8050 1100 8050 1750
-Wire Wire Line
-	8050 1750 8050 3200
-Wire Wire Line
-	8050 3200 8050 3800
-Wire Wire Line
-	8050 3800 8050 3900
-Wire Wire Line
-	8050 3900 8050 4000
-Wire Wire Line
-	8050 4000 8050 4450
+	8050 1100 8050 4450
 $Comp
 L CONN_10 P2
 U 1 1 5155E42D
 P 10400 3550
 F 0 "P2" V 10350 3550 60  0000 C CNN
-F 1 "CONN_12" V 10450 3550 60  0000 C CNN
+F 1 "CONN_10" V 10450 3550 60  0000 C CNN
 F 2 "" H 10400 3550 60  0000 C CNN
 F 3 "" H 10400 3550 60  0000 C CNN
 	1    10400 3550
@@ -394,15 +362,13 @@ F 3 "" H 10400 3550 60  0000 C CNN
 $EndComp
 Connection ~ 8050 1750
 Wire Wire Line
-	4250 3200 8050 3200
-Wire Wire Line
-	8050 3200 10050 3200
+	4250 3200 10050 3200
 Wire Wire Line
 	10650 1100 8050 1100
 Wire Wire Line
 	10650 1400 10050 1400
 Wire Wire Line
-	10050 2650 9700 2650
+	9400 2650 10050 2650
 Connection ~ 10050 2650
 Wire Wire Line
 	4800 4450 4800 1250
@@ -420,4 +386,17 @@ Connection ~ 10050 3400
 Wire Wire Line
 	8150 3800 8050 3800
 Connection ~ 8050 3800
+Wire Wire Line
+	10050 3600 9400 3600
+Wire Wire Line
+	9400 2650 9400 3700
+Connection ~ 9700 2650
+Wire Wire Line
+	9400 3700 10050 3700
+Connection ~ 9400 3600
+Wire Wire Line
+	10050 3500 9400 3500
+Connection ~ 9400 3500
+Text Notes 10550 3550 0    60   ~ 0
+Use Pins 5-7\nfor negative side\nof remote switches
 $EndSCHEMATC
