@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 01 Apr 2013 05:32:49 PM CDT
+EESchema Schematic File Version 2  date Wed 03 Apr 2013 10:52:06 AM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
-Date "1 apr 2013"
+Date "3 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -399,4 +399,10 @@ Wire Wire Line
 Connection ~ 9400 3500
 Text Notes 10550 3550 0    60   ~ 0
 Use Pins 5-7\nfor negative side\nof remote switches
+$Sheet
+S 600  2600 600  1050
+U 515C503B
+F0 "GPIO" 50
+F1 "GPIO.sch" 50
+$EndSheet
 $EndSCHEMATC
