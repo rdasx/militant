@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 03 Apr 2013 10:52:06 AM CDT
+EESchema Schematic File Version 2  date Thu 04 Apr 2013 10:55:40 AM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title ""
-Date "3 apr 2013"
+Date "4 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -373,4 +373,6 @@ Wire Wire Line
 Connection ~ 8450 3000
 Text HLabel 8050 3500 0    60   Output ~ 0
 Atty-
+Text HLabel 11100 2600 2    60   Input ~ 0
+Vusb
 $EndSCHEMATC
