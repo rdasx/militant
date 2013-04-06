@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 04 Apr 2013 10:55:40 AM CDT
+EESchema Schematic File Version 2  date Fri 05 Apr 2013 11:43:57 PM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title ""
-Date "4 apr 2013"
+Date "5 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,12 +46,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 550  1650 550  300 
+S 550  1650 550  400 
 U 515590E1
 F0 "Boost" 50
 F1 "Boost.sch" 50
 F2 "Vout" O R 1100 1850 60 
 F3 "Vin" I R 1100 1750 60 
+F4 "GND" I R 1100 1950 60 
 $EndSheet
 $Comp
 L ATTINY85-S IC1
@@ -75,19 +76,8 @@ F 3 "" H 8050 5300 60  0001 C CNN
 	1    8050 5300
 	1    0    0    -1  
 $EndComp
-Connection ~ 6500 550 
-Wire Wire Line
-	1100 1850 7800 1850
-Wire Wire Line
-	7800 1850 7800 3300
-Wire Wire Line
-	8900 4450 7650 4450
-Wire Wire Line
-	8050 4900 8050 5300
-Wire Wire Line
-	8050 4950 7650 4950
 $Sheet
-S 10650 1000 550  750 
+S 10650 1000 550  650 
 U 515980B7
 F0 "Simple PCB" 50
 F1 "modsimple.sch" 50
@@ -96,14 +86,6 @@ F3 "GND" I L 10650 1550 60
 F4 "GATE" I L 10650 1250 60 
 F5 "Atty-" O L 10650 1400 60 
 $EndSheet
-Wire Wire Line
-	10650 1400 10050 1400
-Wire Wire Line
-	10650 1550 10300 1550
-Text Label 1550 1750 2    60   ~ 0
-Battery+
-Wire Wire Line
-	1100 1750 1550 1750
 Text Label 4950 4450 2    60   ~ 0
 PB0
 Text Label 4950 4550 2    60   ~ 0
@@ -127,52 +109,31 @@ F 3 "" H 10300 1750 60  0001 C CNN
 	1    10300 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10300 1550 10300 1750
 $Comp
 L GND #PWR?
 U 1 1 515DB270
-P 10350 3400
-F 0 "#PWR?" H 10350 3400 30  0001 C CNN
-F 1 "GND" H 10350 3330 30  0001 C CNN
-F 2 "" H 10350 3400 60  0001 C CNN
-F 3 "" H 10350 3400 60  0001 C CNN
-	1    10350 3400
+P 10350 3750
+F 0 "#PWR?" H 10350 3750 30  0001 C CNN
+F 1 "GND" H 10350 3680 30  0001 C CNN
+F 2 "" H 10350 3750 60  0001 C CNN
+F 3 "" H 10350 3750 60  0001 C CNN
+	1    10350 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10500 2550 10200 2550
-Wire Wire Line
-	10500 2650 10200 2650
-Wire Wire Line
-	10500 2750 10200 2750
-Wire Wire Line
-	10500 2850 10200 2850
-Wire Wire Line
-	10500 2950 10200 2950
-Wire Wire Line
-	10500 2450 10200 2450
-Text Label 10200 2450 0    60   ~ 0
+Text Label 9250 2450 0    60   ~ 0
 PB0
-Text Label 10200 2550 0    60   ~ 0
+Text Label 9250 2550 0    60   ~ 0
 PB1
-Text Label 10200 2650 0    60   ~ 0
+Text Label 9250 2650 0    60   ~ 0
 PB2
-Text Label 10200 2750 0    60   ~ 0
+Text Label 9250 2750 0    60   ~ 0
 PB3
-Text Label 10200 2850 0    60   ~ 0
+Text Label 9250 2850 0    60   ~ 0
 PB4
-Text Label 10200 2950 0    60   ~ 0
+Text Label 9250 2950 0    60   ~ 0
 PB5
-Wire Wire Line
-	10500 2350 8900 2350
-Wire Wire Line
-	8900 1100 8900 4450
-Wire Wire Line
-	10650 1100 8900 1100
-Connection ~ 8900 2350
 $Sheet
-S 10500 2250 700  1100
+S 10500 2250 700  1450
 U 515C503B
 F0 "GPIO" 50
 F1 "GPIO.sch" 50
@@ -183,14 +144,11 @@ F5 "PB2" I L 10500 2650 60
 F6 "PB3" I L 10500 2750 60 
 F7 "PB4" I L 10500 2850 60 
 F8 "PB5" I L 10500 2950 60 
-F9 "ChargeLED-" I L 10500 3050 60 
-F10 "Vout" I L 10500 3150 60 
-F11 "GND" I L 10500 3250 60 
+F9 "Vout" I L 10500 3150 60 
+F10 "GND" I L 10500 3600 60 
+F11 "GATE" I L 10500 3250 60 
+F12 "Atty-" I L 10500 3050 60 
 $EndSheet
-Wire Wire Line
-	10500 3250 10350 3250
-Wire Wire Line
-	10350 3250 10350 3400
 $Comp
 L C C?
 U 1 1 515DDA14
@@ -202,8 +160,120 @@ F 3 "" H 8050 4700 60  0000 C CNN
 	1    8050 4700
 	1    0    0    -1  
 $EndComp
+Entry Wire Line
+	9150 2550 9250 2450
+Entry Wire Line
+	9150 2650 9250 2550
+Entry Wire Line
+	9150 2750 9250 2650
+Entry Wire Line
+	9150 2850 9250 2750
+Entry Wire Line
+	9150 2950 9250 2850
+Entry Wire Line
+	9150 3050 9250 2950
+Entry Wire Line
+	4600 4550 4700 4450
+Entry Wire Line
+	4600 4650 4700 4550
+Entry Wire Line
+	4600 4750 4700 4650
+Entry Wire Line
+	4600 4850 4700 4750
+Entry Wire Line
+	4600 4950 4700 4850
+Entry Wire Line
+	4600 5050 4700 4950
+Connection ~ 6500 550 
+Wire Wire Line
+	1100 1850 7800 1850
+Wire Wire Line
+	7800 1850 7800 3150
+Wire Wire Line
+	8900 4450 7650 4450
+Wire Wire Line
+	8050 4900 8050 5300
+Wire Wire Line
+	8050 4950 7650 4950
+Wire Wire Line
+	10650 1400 9800 1400
+Wire Wire Line
+	10650 1550 10300 1550
+Wire Wire Line
+	10300 1550 10300 1750
+Wire Wire Line
+	10500 2550 9250 2550
+Wire Wire Line
+	10500 2650 9250 2650
+Wire Wire Line
+	10500 2750 9250 2750
+Wire Wire Line
+	10500 2850 9250 2850
+Wire Wire Line
+	10500 2950 9250 2950
+Wire Wire Line
+	10500 2450 9250 2450
+Wire Wire Line
+	10500 2350 8900 2350
+Wire Wire Line
+	8900 1100 8900 4450
+Wire Wire Line
+	10650 1100 8900 1100
+Connection ~ 8900 2350
+Wire Wire Line
+	10500 3600 10350 3600
+Wire Wire Line
+	10350 3600 10350 3750
 Wire Wire Line
 	8050 4500 8050 4450
 Connection ~ 8050 4450
 Connection ~ 8050 4950
+Wire Wire Line
+	7800 3150 10500 3150
+Wire Bus Line
+	9150 2550 9150 5650
+Wire Wire Line
+	4950 4450 4700 4450
+Wire Wire Line
+	4950 4550 4700 4550
+Wire Wire Line
+	4950 4650 4700 4650
+Wire Wire Line
+	4950 4750 4700 4750
+Wire Wire Line
+	4950 4850 4700 4850
+Wire Wire Line
+	4950 4950 4700 4950
+Wire Bus Line
+	4600 4550 4600 5650
+Wire Wire Line
+	10650 1250 9700 1250
+Wire Wire Line
+	9700 1250 9700 3250
+Wire Bus Line
+	4600 5650 9150 5650
+Wire Wire Line
+	9700 3250 10500 3250
+Wire Wire Line
+	9800 1400 9800 3050
+Wire Wire Line
+	9800 3050 10500 3050
+Wire Wire Line
+	8900 1750 1100 1750
+Connection ~ 8900 1750
+Wire Wire Line
+	1100 1950 1250 1950
+Wire Wire Line
+	1250 1950 1250 2200
+$Comp
+L GND #PWR?
+U 1 1 515E7221
+P 1250 2200
+F 0 "#PWR?" H 1250 2200 30  0001 C CNN
+F 1 "GND" H 1250 2130 30  0001 C CNN
+F 2 "" H 1250 2200 60  0001 C CNN
+F 3 "" H 1250 2200 60  0001 C CNN
+	1    1250 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 04 Apr 2013 10:55:40 AM CDT
+EESchema Schematic File Version 2  date Fri 05 Apr 2013 11:43:57 PM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title ""
-Date "4 apr 2013"
+Date "5 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -225,45 +225,30 @@ F 3 "" H 10400 3550 60  0000 C CNN
 	1    10400 3550
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R9
-U 1 1 5155E6A2
-P 8400 3700
-F 0 "R9" V 8480 3700 50  0000 C CNN
-F 1 "330" V 8400 3700 50  0000 C CNN
-F 2 "" H 8400 3700 60  0001 C CNN
-F 3 "" H 8400 3700 60  0001 C CNN
-	1    8400 3700
-	0    -1   -1   0   
-$EndComp
-Text Label 10050 3700 2    60   ~ 0
-ChargeLED+
-Text Label 9500 3800 0    60   ~ 0
-ChargeLED-
 Text Label 10050 3300 2    60   ~ 0
 Atomizer-
 $Comp
 L CONN_3X2 P?
 U 1 1 515A2371
-P 1350 3500
-F 0 "P?" H 1350 3750 50  0000 C CNN
-F 1 "ISP" V 1350 3550 40  0000 C CNN
-F 2 "" H 1350 3500 60  0000 C CNN
-F 3 "" H 1350 3500 60  0000 C CNN
-	1    1350 3500
+P 1250 850
+F 0 "P?" H 1250 1100 50  0000 C CNN
+F 1 "ISP" V 1250 900 40  0000 C CNN
+F 2 "" H 1250 850 60  0000 C CNN
+F 3 "" H 1250 850 60  0000 C CNN
+	1    1250 850 
 	1    0    0    -1  
 $EndComp
-Text Label 950  3350 2    60   ~ 0
+Text Label 850  700  2    60   ~ 0
 MISO
-Text Label 950  3450 2    60   ~ 0
+Text Label 850  800  2    60   ~ 0
 SCK
-Text Label 950  3550 2    60   ~ 0
+Text Label 850  900  2    60   ~ 0
 RESET
-Text Label 1750 3350 0    60   ~ 0
+Text Label 1650 700  0    60   ~ 0
 +VCC
-Text Label 1750 3450 0    60   ~ 0
+Text Label 1650 800  0    60   ~ 0
 MOSI
-Text Label 1750 3550 0    60   ~ 0
+Text Label 1650 900  0    60   ~ 0
 Ground
 Text Label 3950 5300 2    60   ~ 0
 Ground
@@ -275,43 +260,10 @@ Text Label 7300 4650 2    60   ~ 0
 SCK
 Text Label 7300 4950 2    60   ~ 0
 RESET
-Text Notes 600  3750 0    60   ~ 0
-NOTE! While ISP is in use, remove batteries and USB connection.\nTry not to push any buttons either. It probably won't hurt, but why bother?\nISP MUST be configured to provide VCC power TO the board
-$Comp
-L R R?
-U 1 1 515C4802
-P 6750 4450
-F 0 "R?" V 6830 4450 50  0000 C CNN
-F 1 "330" V 6750 4450 50  0000 C CNN
-F 2 "" H 6750 4450 60  0001 C CNN
-F 3 "" H 6750 4450 60  0001 C CNN
-	1    6750 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R?
-U 1 1 515C4811
-P 6750 4550
-F 0 "R?" V 6830 4550 50  0000 C CNN
-F 1 "330" V 6750 4550 50  0000 C CNN
-F 2 "" H 6750 4550 60  0001 C CNN
-F 3 "" H 6750 4550 60  0001 C CNN
-	1    6750 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R?
-U 1 1 515C4820
-P 6750 4650
-F 0 "R?" V 6830 4650 50  0000 C CNN
-F 1 "330" V 6750 4650 50  0000 C CNN
-F 2 "" H 6750 4650 60  0001 C CNN
-F 3 "" H 6750 4650 60  0001 C CNN
-	1    6750 4650
-	0    -1   -1   0   
-$EndComp
+Text Notes 500  1100 0    60   ~ 0
+NOTE! While ISP is in use, remove batteries, atomizer, and USB connection.\nTry not to push any buttons either. It probably won't hurt, but why bother?\nISP MUST be configured to provide VCC power TO the board
 Text Notes 3950 4100 0    60   ~ 0
-Vdiv Resistor Values NOT set!\nISP "safety" resistors NOT set!
+Vdiv Resistor Values NOT set!
 Text HLabel 8050 2650 2    60   Input ~ 0
 Vbat
 Text HLabel 7300 4450 2    60   Input ~ 0
@@ -337,8 +289,6 @@ F 3 "" H 7450 5150 60  0001 C CNN
 	1    7450 5150
 	0    -1   -1   0   
 $EndComp
-Text HLabel 9500 3800 0    60   Input ~ 0
-ChargeLED-
 Text Label 10050 3400 2    60   ~ 0
 Gate
 Wire Wire Line
@@ -348,25 +298,29 @@ Wire Wire Line
 Wire Wire Line
 	3450 5300 3450 5450
 Wire Wire Line
-	2850 5300 3950 5300
+	2850 5300 3050 5300
+Wire Wire Line
+	3050 5300 3450 5300
+Wire Wire Line
+	3450 5300 3950 5300
 Connection ~ 3450 5300
-Wire Wire Line
-	2300 6700 9100 6700
-Wire Wire Line
-	9100 6700 9100 3300
 Wire Wire Line
 	3700 4350 3700 4650
 Wire Wire Line
-	2300 4550 2300 6700
+	2800 4550 2850 4550
 Wire Wire Line
-	2800 4550 6500 4550
+	2850 4550 7300 4550
 Wire Wire Line
 	2850 5150 2850 5300
 Wire Wire Line
-	3600 4650 6500 4650
+	3600 4650 3700 4650
+Wire Wire Line
+	3700 4650 7300 4650
 Connection ~ 3700 4650
 Wire Wire Line
-	8650 4100 10050 4100
+	8650 4100 10000 4100
+Wire Wire Line
+	10000 4100 10050 4100
 Wire Wire Line
 	3100 4650 3050 4650
 Wire Wire Line
@@ -382,9 +336,13 @@ Wire Wire Line
 	8050 4000 8150 4000
 Connection ~ 8050 4100
 Wire Wire Line
-	8650 4000 10050 4000
+	8650 4000 9950 4000
 Wire Wire Line
-	8650 3900 10050 3900
+	9950 4000 10050 4000
+Wire Wire Line
+	8650 3900 9850 3900
+Wire Wire Line
+	9850 3900 10050 3900
 Wire Wire Line
 	7300 4750 6100 4750
 Wire Wire Line
@@ -405,21 +363,18 @@ Connection ~ 9850 3900
 Wire Wire Line
 	10750 4300 10000 4300
 Wire Wire Line
-	10600 4600 10600 4850
+	10600 4600 10600 4800
+Wire Wire Line
+	10600 4800 10600 4850
 Wire Wire Line
 	10300 4700 10300 4800
 Wire Wire Line
-	10300 4800 10950 4800
+	10300 4800 10600 4800
+Wire Wire Line
+	10600 4800 10950 4800
 Connection ~ 10600 4800
 Wire Wire Line
 	10950 4800 10950 4500
-Wire Wire Line
-	8050 3700 8150 3700
-Connection ~ 8050 3700
-Wire Wire Line
-	8650 3700 10050 3700
-Wire Wire Line
-	10050 3800 9500 3800
 Wire Wire Line
 	2850 4550 2850 4650
 Connection ~ 2850 4550
@@ -430,28 +385,28 @@ Wire Wire Line
 Wire Wire Line
 	3700 2650 3700 3850
 Wire Wire Line
-	3700 2650 8050 2650
+	3700 2650 7800 2650
 Wire Wire Line
-	8050 2650 8050 4100
+	7800 2650 8050 2650
 Wire Wire Line
-	7300 4450 7000 4450
+	8050 2650 8050 3100
 Wire Wire Line
-	7000 4550 7300 4550
+	8050 3100 8050 3900
 Wire Wire Line
-	7300 4650 7000 4650
+	8050 3900 8050 4000
 Wire Wire Line
-	5200 4450 6500 4450
+	8050 4000 8050 4100
+Wire Wire Line
+	6450 4450 7300 4450
 Wire Wire Line
 	7700 5150 7800 5150
 Wire Wire Line
 	7800 5150 7800 2650
-Wire Wire Line
-	9100 3300 10050 3300
 Connection ~ 7800 2650
 Wire Wire Line
-	10050 3400 5200 3400
+	10050 3400 6450 3400
 Wire Wire Line
-	5200 3400 5200 4450
+	6450 3400 6450 4450
 Wire Wire Line
 	7200 5150 7200 4950
 Wire Wire Line
@@ -465,4 +420,14 @@ Wire Wire Line
 	10050 3200 9500 3200
 Text HLabel 9700 2450 0    60   Input ~ 0
 GND
+Text Notes 3950 4250 0    60   ~ 0
+Shared ISP lines, If pulled-up, \nrequire >1k Ohm pullup value.
+Wire Wire Line
+	10050 3300 2300 3300
+Wire Wire Line
+	2300 3300 2300 4550
+Text HLabel 6450 3400 0    60   Input ~ 0
+GATE
+Text HLabel 2300 4550 0    60   Input ~ 0
+Atty-
 $EndSCHEMATC
