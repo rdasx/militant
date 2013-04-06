@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 05 Apr 2013 11:43:57 PM CDT
+EESchema Schematic File Version 2  date Sat 06 Apr 2013 02:34:34 AM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title ""
-Date "5 apr 2013"
+Date "6 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -184,7 +184,6 @@ Entry Wire Line
 	4600 4950 4700 4850
 Entry Wire Line
 	4600 5050 4700 4950
-Connection ~ 6500 550 
 Wire Wire Line
 	1100 1850 7800 1850
 Wire Wire Line

@@ -1,0 +1,302 @@
+EESchema Schematic File Version 2  date Sat 06 Apr 2013 03:30:07 AM CDT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mod
+LIBS:mod-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date "6 apr 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MAX1709 U?
+U 1 1 515FD738
+P 5650 4200
+F 0 "U?" H 5650 4900 60  0000 C CNN
+F 1 "MAX1709" H 5650 4200 60  0000 C CNN
+F 2 "" H 5650 4200 60  0000 C CNN
+F 3 "" H 5650 4200 60  0000 C CNN
+	1    5650 4200
+	1    0    0    -1  
+$EndComp
+Text HLabel 8300 2800 2    60   Input ~ 0
+Vin
+$Comp
+L INDUCTOR L?
+U 1 1 515FD749
+P 5600 2800
+F 0 "L?" V 5550 2800 40  0000 C CNN
+F 1 "1uH" V 5700 2800 40  0000 C CNN
+F 2 "" H 5600 2800 60  0000 C CNN
+F 3 "" H 5600 2800 60  0000 C CNN
+	1    5600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 515FD758
+P 5600 3100
+F 0 "D?" H 5600 3200 40  0000 C CNN
+F 1 "DIODESCH" H 5600 3000 40  0000 C CNN
+F 2 "" H 5600 3100 60  0000 C CNN
+F 3 "" H 5600 3100 60  0000 C CNN
+	1    5600 3100
+	1    0    0    -1  
+$EndComp
+Text HLabel 8300 3400 2    60   Input ~ 0
+Vout
+$Comp
+L CP1 C?
+U 1 1 515FD796
+P 7200 3650
+F 0 "C?" H 7250 3750 50  0000 L CNN
+F 1 "150uF" H 7250 3550 50  0000 L CNN
+F 2 "" H 7200 3650 60  0000 C CNN
+F 3 "" H 7200 3650 60  0000 C CNN
+	1    7200 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 8300 3900 2    60   Input ~ 0
+GND
+$Comp
+L GND #PWR?
+U 1 1 515FD85A
+P 7700 4150
+F 0 "#PWR?" H 7700 4150 30  0001 C CNN
+F 1 "GND" H 7700 4080 30  0001 C CNN
+F 2 "" H 7700 4150 60  0000 C CNN
+F 3 "" H 7700 4150 60  0000 C CNN
+	1    7700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 515FD8DC
+P 3800 4250
+F 0 "R?" V 3880 4250 50  0000 C CNN
+F 1 "R" V 3800 4250 50  0000 C CNN
+F 2 "" H 3800 4250 60  0000 C CNN
+F 3 "" H 3800 4250 60  0000 C CNN
+	1    3800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 515FD904
+P 5750 5000
+F 0 "#PWR?" H 5750 5000 30  0001 C CNN
+F 1 "GND" H 5750 4930 30  0001 C CNN
+F 2 "" H 5750 5000 60  0000 C CNN
+F 3 "" H 5750 5000 60  0000 C CNN
+	1    5750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 515FD90C
+P 4050 4200
+F 0 "C?" H 4100 4300 50  0000 L CNN
+F 1 "C" H 4100 4100 50  0000 L CNN
+F 2 "" H 4050 4200 60  0000 C CNN
+F 3 "" H 4050 4200 60  0000 C CNN
+	1    4050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 515FD919
+P 4350 4300
+F 0 "C?" H 4400 4400 50  0000 L CNN
+F 1 "C" H 4400 4200 50  0000 L CNN
+F 2 "" H 4350 4300 60  0000 C CNN
+F 3 "" H 4350 4300 60  0000 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 515FDA2E
+P 7100 4350
+F 0 "R?" V 7180 4350 50  0000 C CNN
+F 1 "2K" V 7100 4350 50  0000 C CNN
+F 2 "" H 7100 4350 60  0000 C CNN
+F 3 "" H 7100 4350 60  0000 C CNN
+	1    7100 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 515FDA34
+P 6650 4550
+F 0 "C?" H 6700 4650 50  0000 L CNN
+F 1 "C" H 6700 4450 50  0000 L CNN
+F 2 "" H 6650 4550 60  0000 C CNN
+F 3 "" H 6650 4550 60  0000 C CNN
+	1    6650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 515FDCBF
+P 7450 3650
+F 0 "C?" H 7500 3750 50  0000 L CNN
+F 1 "150uF" H 7500 3550 50  0000 L CNN
+F 2 "" H 7450 3650 60  0000 C CNN
+F 3 "" H 7450 3650 60  0000 C CNN
+	1    7450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 515FDCC5
+P 7950 3650
+F 0 "C?" H 8000 3750 50  0000 L CNN
+F 1 "150uF" H 8000 3550 50  0000 L CNN
+F 2 "" H 7950 3650 60  0000 C CNN
+F 3 "" H 7950 3650 60  0000 C CNN
+	1    7950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 515FDCCB
+P 8150 3650
+F 0 "C?" H 8200 3750 50  0000 L CNN
+F 1 "150uF" H 8200 3550 50  0000 L CNN
+F 2 "" H 8150 3650 60  0000 C CNN
+F 3 "" H 8150 3650 60  0000 C CNN
+	1    8150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2800 8300 2800
+Wire Wire Line
+	5300 2800 4350 2800
+Wire Wire Line
+	4350 2800 4350 3750
+Wire Wire Line
+	5400 3100 4350 3100
+Connection ~ 4350 3100
+Wire Wire Line
+	7200 3400 8300 3400
+Wire Wire Line
+	7200 3100 5800 3100
+Wire Wire Line
+	7200 3100 7200 3450
+Connection ~ 7200 3400
+Connection ~ 7450 3400
+Connection ~ 7950 2800
+Connection ~ 8150 2800
+Wire Wire Line
+	6450 3900 8300 3900
+Connection ~ 7200 3900
+Connection ~ 7450 3900
+Connection ~ 7950 3900
+Connection ~ 8150 3900
+Wire Wire Line
+	7700 3900 7700 4150
+Connection ~ 7700 3900
+Wire Wire Line
+	4350 3750 4850 3750
+Wire Wire Line
+	4850 3900 3200 3900
+Wire Wire Line
+	3200 3900 3200 4850
+Wire Wire Line
+	3200 4850 6650 4850
+Wire Wire Line
+	5750 4850 5750 5000
+Wire Wire Line
+	4850 4100 4350 4100
+Wire Wire Line
+	4350 4500 4350 4850
+Connection ~ 4350 4850
+Wire Wire Line
+	3800 4000 4850 4000
+Connection ~ 4050 4000
+Wire Wire Line
+	3800 4500 3800 4850
+Connection ~ 3800 4850
+Wire Wire Line
+	4050 4400 4050 4850
+Connection ~ 4050 4850
+Wire Wire Line
+	6850 4350 6650 4350
+Wire Wire Line
+	6650 4350 6650 4100
+Wire Wire Line
+	6650 4100 6450 4100
+Wire Wire Line
+	7350 4350 8650 4350
+Wire Wire Line
+	8650 4350 8650 3250
+Wire Wire Line
+	8650 3250 8250 3250
+Wire Wire Line
+	8250 3250 8250 3400
+Connection ~ 8250 3400
+Wire Wire Line
+	6650 4850 6650 4750
+Connection ~ 5750 4850
+Wire Wire Line
+	6450 3800 5800 3800
+Wire Wire Line
+	5800 3800 5800 4850
+Connection ~ 5800 4850
+Wire Wire Line
+	6450 3700 6600 3700
+Wire Wire Line
+	6600 3700 6600 4100
+Connection ~ 6600 4100
+Wire Wire Line
+	7450 3400 7450 3450
+Wire Wire Line
+	7200 3850 7200 3900
+Wire Wire Line
+	7450 3900 7450 3850
+Wire Wire Line
+	7950 3850 7950 3900
+Wire Wire Line
+	8150 3850 8150 3900
+Wire Wire Line
+	7950 3450 7950 2800
+Wire Wire Line
+	8150 2800 8150 3450
+$EndSCHEMATC
