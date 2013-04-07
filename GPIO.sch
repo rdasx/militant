@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 06 Apr 2013 02:34:34 AM CDT
+EESchema Schematic File Version 2  date Sat 06 Apr 2013 08:45:37 PM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title ""
-Date "6 apr 2013"
+Date "7 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -67,60 +67,60 @@ $EndComp
 $Comp
 L GND #PWR04
 U 1 1 5155BA90
-P 3450 5450
-F 0 "#PWR04" H 3450 5450 30  0001 C CNN
-F 1 "GND" H 3450 5380 30  0001 C CNN
-F 2 "" H 3450 5450 60  0001 C CNN
-F 3 "" H 3450 5450 60  0001 C CNN
-	1    3450 5450
+P 4550 5450
+F 0 "#PWR04" H 4550 5450 30  0001 C CNN
+F 1 "GND" H 4550 5380 30  0001 C CNN
+F 2 "" H 4550 5450 60  0001 C CNN
+F 3 "" H 4550 5450 60  0001 C CNN
+	1    4550 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R8
 U 1 1 5155BB33
-P 3700 4100
-F 0 "R8" V 3780 4100 50  0000 C CNN
-F 1 "330" V 3700 4100 50  0000 C CNN
-F 2 "" H 3700 4100 60  0001 C CNN
-F 3 "" H 3700 4100 60  0001 C CNN
-	1    3700 4100
+P 4800 4100
+F 0 "R8" V 4880 4100 50  0000 C CNN
+F 1 "330" V 4800 4100 50  0000 C CNN
+F 2 "" H 4800 4100 60  0001 C CNN
+F 3 "" H 4800 4100 60  0001 C CNN
+	1    4800 4100
 	-1   0    0    1   
 $EndComp
 $Comp
 L R R7
 U 1 1 5155BB45
-P 3350 4650
-F 0 "R7" V 3430 4650 50  0000 C CNN
-F 1 "330" V 3350 4650 50  0000 C CNN
-F 2 "" H 3350 4650 60  0001 C CNN
-F 3 "" H 3350 4650 60  0001 C CNN
-	1    3350 4650
+P 4450 4650
+F 0 "R7" V 4530 4650 50  0000 C CNN
+F 1 "330" V 4450 4650 50  0000 C CNN
+F 2 "" H 4450 4650 60  0001 C CNN
+F 3 "" H 4450 4650 60  0001 C CNN
+	1    4450 4650
 	0    -1   -1   0   
 $EndComp
-Text Notes 3050 4050 0    60   ~ 0
+Text Notes 4150 4050 0    60   ~ 0
 Vdiv for Vbat\nmonitoring
 $Comp
 L R R6
 U 1 1 5155BC78
-P 2550 4550
-F 0 "R6" V 2630 4550 50  0000 C CNN
-F 1 "330" V 2550 4550 50  0000 C CNN
-F 2 "" H 2550 4550 60  0001 C CNN
-F 3 "" H 2550 4550 60  0001 C CNN
-	1    2550 4550
+P 3650 4550
+F 0 "R6" V 3730 4550 50  0000 C CNN
+F 1 "330" V 3650 4550 50  0000 C CNN
+F 2 "" H 3650 4550 60  0001 C CNN
+F 3 "" H 3650 4550 60  0001 C CNN
+	1    3650 4550
 	0    -1   -1   0   
 $EndComp
-Text Notes 2100 4400 0    60   ~ 0
+Text Notes 3200 4400 0    60   ~ 0
 Vdiv for Vatty feedback
 $Comp
 L R R5
 U 1 1 5155C2FA
-P 2850 4900
-F 0 "R5" V 2930 4900 50  0000 C CNN
-F 1 "330" V 2850 4900 50  0000 C CNN
-F 2 "" H 2850 4900 60  0001 C CNN
-F 3 "" H 2850 4900 60  0001 C CNN
-	1    2850 4900
+P 3950 4900
+F 0 "R5" V 4030 4900 50  0000 C CNN
+F 1 "330" V 3950 4900 50  0000 C CNN
+F 2 "" H 3950 4900 60  0001 C CNN
+F 3 "" H 3950 4900 60  0001 C CNN
+	1    3950 4900
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -250,7 +250,7 @@ Text Label 1650 800  0    60   ~ 0
 MOSI
 Text Label 1650 900  0    60   ~ 0
 Ground
-Text Label 3950 5300 2    60   ~ 0
+Text Label 5050 5300 2    60   ~ 0
 Ground
 Text Label 7300 4450 2    60   ~ 0
 MOSI
@@ -262,7 +262,7 @@ Text Label 7300 4950 2    60   ~ 0
 RESET
 Text Notes 500  1100 0    60   ~ 0
 NOTE! While ISP is in use, remove batteries, atomizer, and USB connection.\nTry not to push any buttons either. It probably won't hurt, but why bother?\nISP MUST be configured to provide VCC power TO the board
-Text Notes 3950 4100 0    60   ~ 0
+Text Notes 5050 4100 0    60   ~ 0
 Vdiv Resistor Values NOT set!
 Text HLabel 8050 2650 2    60   Input ~ 0
 Vbat
@@ -296,36 +296,36 @@ Wire Wire Line
 Wire Wire Line
 	9700 2450 9700 2550
 Wire Wire Line
-	3450 5300 3450 5450
+	4550 5300 4550 5450
 Wire Wire Line
-	2850 5300 3050 5300
+	3950 5300 4150 5300
 Wire Wire Line
-	3050 5300 3450 5300
+	4150 5300 4550 5300
 Wire Wire Line
-	3450 5300 3950 5300
-Connection ~ 3450 5300
+	4550 5300 5050 5300
+Connection ~ 4550 5300
 Wire Wire Line
-	3700 4350 3700 4650
+	4800 4350 4800 4650
 Wire Wire Line
-	2800 4550 2850 4550
+	3900 4550 3950 4550
 Wire Wire Line
-	2850 4550 7300 4550
+	3950 4550 7300 4550
 Wire Wire Line
-	2850 5150 2850 5300
+	3950 5150 3950 5300
 Wire Wire Line
-	3600 4650 3700 4650
+	4700 4650 4800 4650
 Wire Wire Line
-	3700 4650 7300 4650
-Connection ~ 3700 4650
+	4800 4650 7300 4650
+Connection ~ 4800 4650
 Wire Wire Line
 	8650 4100 10000 4100
 Wire Wire Line
 	10000 4100 10050 4100
 Wire Wire Line
-	3100 4650 3050 4650
+	4200 4650 4150 4650
 Wire Wire Line
-	3050 4650 3050 5300
-Connection ~ 3050 5300
+	4150 4650 4150 5300
+Connection ~ 4150 5300
 Wire Wire Line
 	8050 4100 8150 4100
 Connection ~ 8050 3900
@@ -376,16 +376,16 @@ Connection ~ 10600 4800
 Wire Wire Line
 	10950 4800 10950 4500
 Wire Wire Line
-	2850 4550 2850 4650
-Connection ~ 2850 4550
+	3950 4550 3950 4650
+Connection ~ 3950 4550
 Wire Wire Line
 	10050 2450 9700 2450
 Wire Wire Line
 	10050 3500 10050 3600
 Wire Wire Line
-	3700 2650 3700 3850
+	4800 2650 4800 3850
 Wire Wire Line
-	3700 2650 7800 2650
+	4800 2650 7800 2650
 Wire Wire Line
 	7800 2650 8050 2650
 Wire Wire Line
@@ -420,14 +420,47 @@ Wire Wire Line
 	10050 3200 9500 3200
 Text HLabel 9700 2450 0    60   Input ~ 0
 GND
-Text Notes 3950 4250 0    60   ~ 0
+Text Notes 5050 4250 0    60   ~ 0
 Shared ISP lines, If pulled-up, \nrequire >1k Ohm pullup value.
 Wire Wire Line
-	10050 3300 2300 3300
+	10050 3300 3400 3300
 Wire Wire Line
-	2300 3300 2300 4550
+	3400 3300 3400 4550
 Text HLabel 6450 3400 0    60   Input ~ 0
 GATE
-Text HLabel 2300 4550 0    60   Input ~ 0
+Text HLabel 3400 4550 0    60   Input ~ 0
 Atty-
+$Comp
+L R R?
+U 1 1 5160CCB0
+P 1400 4200
+F 0 "R?" V 1480 4200 50  0000 C CNN
+F 1 "330" V 1400 4200 50  0000 C CNN
+F 2 "" H 1400 4200 60  0001 C CNN
+F 3 "" H 1400 4200 60  0001 C CNN
+	1    1400 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5160CCD1
+P 1400 4850
+F 0 "R?" V 1480 4850 50  0000 C CNN
+F 1 "330" V 1400 4850 50  0000 C CNN
+F 2 "" H 1400 4850 60  0001 C CNN
+F 3 "" H 1400 4850 60  0001 C CNN
+	1    1400 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5160CCD8
+P 1050 4500
+F 0 "R?" V 1130 4500 50  0000 C CNN
+F 1 "330" V 1050 4500 50  0000 C CNN
+F 2 "" H 1050 4500 60  0001 C CNN
+F 3 "" H 1050 4500 60  0001 C CNN
+	1    1050 4500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
