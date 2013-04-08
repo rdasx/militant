@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 06 Apr 2013 02:27:08 PM CDT
+EESchema Schematic File Version 2  date Sun 07 Apr 2013 03:04:25 AM CDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
-Date "6 apr 2013"
+Date "7 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -211,4 +211,6 @@ ChargeLED-
 Wire Wire Line
 	4100 3100 4100 3300
 Connection ~ 4100 3300
+Text Notes 4900 4250 0    60   ~ 0
+To Substite MCP73811:\nRemove R4, Jump 5 to 4\nRemove and Jump D1 & R1\nMCP73811 is half cost, but no indicator\nperhaps use MCU?
 $EndSCHEMATC
